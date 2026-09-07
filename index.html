@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ALIA | Tu Aliado en Cada Gestión - Asistencia Virtual Profesional</title>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config directly from tokens -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-fixed-variant": "#004e5f",
+            "primary-fixed": "#d5e3ff",
+            "on-surface": "#0b1c30",
+            "surface-container-high": "#dce9ff",
+            "on-primary-container": "#778db2",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#d3e4fe",
+            "surface-container-highest": "#d3e4fe",
+            "outline-variant": "#c4c6cf",
+            "on-tertiary-fixed": "#001f27",
+            "on-primary-fixed-variant": "#314769",
+            "on-tertiary-container": "#0099b8",
+            "primary-fixed-dim": "#b1c7f0",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#44474e",
+            "tertiary-container": "#002933",
+            "surface-bright": "#f8f9ff",
+            "surface": "#f8f9ff",
+            "secondary": "#006399",
+            "on-background": "#0b1c30",
+            "on-secondary-container": "#004972",
+            "on-secondary-fixed": "#001d32",
+            "on-error": "#ffffff",
+            "inverse-surface": "#213145",
+            "tertiary-fixed": "#b3ebff",
+            "primary": "#001026",
+            "secondary-fixed-dim": "#94ccff",
+            "inverse-on-surface": "#eaf1ff",
+            "surface-container-low": "#eff4ff",
+            "error": "#ba1a1a",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed-variant": "#004b74",
+            "background": "#f8f9ff",
+            "surface-container": "#e5eeff",
+            "secondary-fixed": "#cde5ff",
+            "surface-dim": "#cbdbf5",
+            "surface-tint": "#495f82",
+            "primary-container": "#0b2545",
+            "tertiary-fixed-dim": "#4cd6fb",
+            "tertiary": "#001218",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#67bafd",
+            "outline": "#74777f",
+            "inverse-primary": "#b1c7f0",
+            "on-primary-fixed": "#001c3b",
+            "surface-container-lowest": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2rem",
+            "space-2xl": "3rem",
+            "space-4xl": "6rem",
+            "margin-tablet": "2rem",
+            "space-3xl": "4rem",
+            "space-3xs": "0.125rem",
+            "margin-desktop": "3rem",
+            "space-md": "1rem",
+            "gutter-tablet": "1.5rem",
+            "space-2xs": "0.25rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.75rem",
+            "gutter-desktop": "2rem",
+            "space-xs": "0.5rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "caption-caps": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "title-lg": ["Inter"],
+            "display-md": ["Plus Jakarta Sans"],
+            "title-md": ["Inter"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "display-md-mobile": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "body-sm": ["Inter"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "caption-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "display-md": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "display-md-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .shadow-ambient-1 {
+      box-shadow: 0px 1px 3px rgba(11, 37, 69, 0.04), 0px 4px 8px -2px rgba(11, 37, 69, 0.03);
+    }
+    .shadow-ambient-2 {
+      box-shadow: 0px 4px 6px -1px rgba(11, 37, 69, 0.06), 0px 10px 15px -3px rgba(0, 119, 182, 0.08);
+    }
+    .shadow-ambient-3 {
+      box-shadow: 0px 20px 25px -5px rgba(11, 37, 69, 0.1), 0px 8px 10px -6px rgba(11, 37, 69, 0.05);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-secondary selection:text-on-primary">
+<!-- TOP APP BAR / NAVBAR (PREDICTED COMPONENT FROM JSON) -->
+<header class="docked full-width top-0 sticky z-50 bg-surface-container-lowest/85 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<div class="w-full flex items-center justify-between px-6 md:px-12 max-w-7xl mx-auto h-20">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center gap-3 group" href="#inicio">
+<div class="relative w-11 h-11 rounded-xl overflow-hidden border border-outline-variant/40 bg-surface-container-low shadow-sm flex items-center justify-center p-0.5">
+<img alt="ALIA Asistencia Virtual Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL2gqkZXuvUnZbg0mjfAh9_kQZYaHFi8NSuyCw2o3Gvxai9hMSvBq1pXNuNX8xzEBHI7xc-H9L1vUqf4ciRbbsTf5dmiZieoBpExhRNYUmEyyOca6qKIVkFNhzl1M1ILXwTOdxQ4AvZMJQ_k9l2mE1GKryxvZEpPkfzHEHMKnm3fyZDUTud5BcHSjDRnGubPQoHcFvVAnuxsl_uraHGs5Pd9gsWB1s5O0NkTmtCDC5jWcpp4O2yTF0Cr_dhmdnt1G_31U"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-headline-md font-headline-md font-bold text-primary tracking-tight">ALIA</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="text-caption-caps font-caption-caps text-on-surface-variant tracking-wider hidden sm:block">TU ALIADO EN CADA GESTIÓN</span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-secondary font-label-md font-semibold border-b-2 border-secondary pb-1" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors" href="#servicios">Servicios</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors" href="#planes">Planes</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors" href="#como-funciona">Cómo funciona</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors" href="#seguridad">Seguridad</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors" href="#contacto">Contacto</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-secondary transition-all duration-150 active:scale-95 shadow-sm" href="#contacto">
+<span class="material-symbols-outlined text-[18px]" data-icon="calendar_today">calendar_today</span>
+<span>Agendar una llamada</span>
+</a>
+<!-- Mobile Menu Toggle Button -->
+<button aria-label="Abrir menú" class="lg:hidden p-2 text-primary hover:text-secondary rounded-lg focus:outline-none" id="mobile-toggle">
+<span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Nav Drawer Menu -->
+<div class="hidden lg:hidden bg-surface-container-lowest border-t border-outline-variant/30 px-6 py-5 shadow-lg space-y-4" id="mobile-menu">
+<a class="block text-secondary font-label-md font-semibold py-1" href="#inicio">Inicio</a>
+<a class="block text-on-surface-variant font-label-md hover:text-primary py-1" href="#servicios">Servicios</a>
+<a class="block text-on-surface-variant font-label-md hover:text-primary py-1" href="#planes">Planes</a>
+<a class="block text-on-surface-variant font-label-md hover:text-primary py-1" href="#como-funciona">Cómo funciona</a>
+<a class="block text-on-surface-variant font-label-md hover:text-primary py-1" href="#seguridad">Seguridad</a>
+<a class="block text-on-surface-variant font-label-md hover:text-primary py-1" href="#contacto">Contacto</a>
+</div>
+</header>
+<!-- 1. HERO / INICIO (#inicio) -->
+<section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-gradient-to-b from-surface-container-low/60 via-surface to-surface-container-lowest" id="inicio">
+<!-- Ambient subtle glow -->
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 left-[-50px] w-80 h-80 bg-surface-container-high/50 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Hero Text Column -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<!-- Badge -->
+<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-low border border-secondary/20 shadow-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-caption-caps font-caption-caps text-secondary uppercase">Asistencia Virtual Corporativa</span>
+</div>
+<h1 class="text-display-md-mobile md:text-display-lg font-display-md md:font-display-lg text-primary tracking-tight mb-6">
+            Somos tu aliado en cada gestión.
+          </h1>
+<p class="text-body-md md:text-body-lg font-body-md md:font-body-lg text-on-surface-variant mb-8 max-w-2xl leading-relaxed">
+            Delegá las tareas que consumen tu tiempo. ALIA se encarga de tu administración, atención al cliente y apoyo comercial para que puedas enfocarte en hacer crecer tu negocio.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
+<a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-on-primary-fixed-variant transition-all duration-200 shadow-ambient-1 hover:shadow-ambient-2 active:scale-95" href="#servicios">
+<span>Conocer nuestros servicios</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-primary-container font-label-md hover:border-secondary hover:text-secondary hover:bg-surface-container-low transition-all duration-200 shadow-sm active:scale-95" href="#contacto">
+<span class="material-symbols-outlined text-[18px]" data-icon="schedule">schedule</span>
+<span>Agendar una llamada de 15 min</span>
+</a>
+</div>
+<!-- Trust Sub-badge -->
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant/30 w-full max-w-xl">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" data-icon="verified_user">verified_user</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+<strong class="text-primary font-medium">Asistencia profesional</strong>, procesos claros y atención bajo supervisión garantizada.
+            </p>
+</div>
+</div>
+<!-- Hero Graphic Column: Dynamic Operations Dashboard Mockup -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Main Glass Card Container -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 shadow-ambient-3 p-6 relative z-10">
+<!-- Card Header -->
+<div class="flex items-center justify-between pb-4 mb-4 border-b border-outline-variant/20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high/60 p-1 flex items-center justify-center border border-outline-variant/30">
+<img alt="ALIA Icon" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_YXQFwdv2eMSqJZh57kOaov-7pbjtXctoIEKvKVBN1DqywjV6ATBR-irp6Zh_L7YUHg5IOIWFlr6vRqdyvisf4jU8iZKHtNjrS8JHkIXDqZnt734FqVHLwF7TzM0AIT68z8fpiekBSvAUuoD5rysi-BCmWQ7V4YCaDZYD5qUGX6zPDBbVL57OoZKV7l8tdJnkCKpuZ0krV5ceFji1pi_K8bNYP1SfdS2oL2Gcs6hT32XVvAc5smfXIXF9UWDTBd3XKr8"/>
+</div>
+<div>
+<h2 class="text-title-md font-title-md text-primary leading-tight">Mesa de Operaciones</h2>
+<span class="text-caption-caps font-caption-caps text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> ACTIVA • SUPERVISADA
+                    </span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary text-caption-caps font-caption-caps">
+                  HOY
+                </span>
+</div>
+<!-- Real-time Activity Feed / Dashboard elements -->
+<div class="space-y-3.5">
+<!-- Item 1: Correo & Documentos -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low/70 border border-outline-variant/20">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" data-icon="mark_email_read">mark_email_read</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<p class="text-label-md font-label-md text-primary truncate">Bandeja Ejecutiva Limpia</p>
+<span class="text-body-sm font-body-sm text-outline">09:15 AM</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">32 emails clasificados y 4 respuestas de urgencia enviadas.</p>
+</div>
+</div>
+<!-- Item 2: WhatsApp CRM & Atención -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" data-icon="forum">forum</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<p class="text-label-md font-label-md text-primary truncate">Atención WhatsApp Business</p>
+<span class="text-caption-caps font-caption-caps px-2 py-0.5 rounded-full bg-surface-container text-secondary font-medium">100% al día</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">14 prospectos atendidos en menos de 3 minutos de espera.</p>
+</div>
+</div>
+<!-- Item 3: Agenda Confirmada -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low/70 border border-outline-variant/20">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" data-icon="event_available">event_available</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<p class="text-label-md font-label-md text-primary truncate">Reuniones Confirmadas</p>
+<span class="text-body-sm font-body-sm text-outline">Calendario</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">5 citas comerciales validadas para el comité directivo.</p>
+</div>
+</div>
+</div>
+<!-- Micro Metric Footer in Card -->
+<div class="mt-5 pt-4 border-t border-outline-variant/20 grid grid-cols-2 gap-3 text-center">
+<div class="p-2.5 rounded-lg bg-surface-container-low">
+<span class="block text-headline-sm font-headline-sm text-primary">+14 hrs</span>
+<span class="text-caption-caps font-caption-caps text-on-surface-variant">Liberadas esta semana</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low">
+<span class="block text-headline-sm font-headline-sm text-secondary">0%</span>
+<span class="text-caption-caps font-caption-caps text-on-surface-variant">Mensajes sin responder</span>
+</div>
+</div>
+</div>
+<!-- Floating Pill Badge decoration -->
+<div class="absolute -bottom-4 -left-4 bg-primary text-on-primary px-4 py-2.5 rounded-xl shadow-ambient-2 z-20 flex items-center gap-2.5 border border-primary-fixed-dim/20">
+<span class="material-symbols-outlined text-[20px] text-secondary-container" data-icon="bolt">bolt</span>
+<span class="text-label-sm font-label-sm tracking-wide">Tu Aliado en Cada Gestión</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. ¿QUÉ ES ALIA? -->
+<section class="py-20 md:py-28 bg-surface-container-lowest border-b border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-caption-caps font-caption-caps text-secondary uppercase mb-3 inline-block">Eficiencia y Descongestión</span>
+<h2 class="text-display-md-mobile md:text-display-md font-display-md text-primary tracking-tight mb-5">
+          Tu equipo necesita tiempo. Nosotros ayudamos a recuperarlo.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+          En ALIA nos convertimos en el motor operativo de su empresa. Ayudamos a directores, consultores y PYMES a liberar tiempo estratégico, absorbiendo tareas diarias de administración, atención al cliente y prospección comercial de manera eficiente.
+        </p>
+</div>
+<!-- 3 Visual Benefits Bento Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1: Delegá -->
+<div class="p-8 rounded-2xl bg-surface-container-low/50 border border-outline-variant/40 hover:border-secondary transition-all duration-300 shadow-ambient-1 hover:shadow-ambient-2 group flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-container-highest text-secondary flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="assignment_turned_in">assignment_turned_in</span>
+</div>
+<span class="text-caption-caps font-caption-caps text-secondary font-bold block mb-1">PASO 01</span>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Delegá</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Dejá en manos de ALIA las tareas operativas que consumen tiempo. Descargá tu rutina de procesos repetitivos y cuellos de botella.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center gap-2 text-secondary text-label-sm font-label-sm">
+<span>Operación continua</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+<!-- Card 2: Organizá -->
+<div class="p-8 rounded-2xl bg-surface-container-low/50 border border-outline-variant/40 hover:border-secondary transition-all duration-300 shadow-ambient-1 hover:shadow-ambient-2 group flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-container-highest text-secondary flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="account_tree">account_tree</span>
+</div>
+<span class="text-caption-caps font-caption-caps text-secondary font-bold block mb-1">PASO 02</span>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Organizá</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Contá con procesos y seguimiento para mantener tu operación ordenada. Tableros claros, carpetas sincronizadas y trazabilidad diaria.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center gap-2 text-secondary text-label-sm font-label-sm">
+<span>Estandarización real</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+<!-- Card 3: Crecé -->
+<div class="p-8 rounded-2xl bg-surface-container-low/50 border border-outline-variant/40 hover:border-secondary transition-all duration-300 shadow-ambient-1 hover:shadow-ambient-2 group flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-container-highest text-secondary flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="trending_up">trending_up</span>
+</div>
+<span class="text-caption-caps font-caption-caps text-secondary font-bold block mb-1">PASO 03</span>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Crecé</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Recuperá tiempo para enfocarte en clientes, estrategia y crecimiento. Tomá decisiones de alto impacto mientras tu backoffice avanza.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center gap-2 text-secondary text-label-sm font-label-sm">
+<span>Escalamiento ágil</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SERVICIOS (#servicios) -->
+<section class="py-20 md:py-28 bg-surface" id="servicios">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-caption-caps font-caption-caps text-secondary uppercase mb-3 inline-block">Áreas de Especialización</span>
+<h2 class="text-display-md-mobile md:text-display-md font-display-md text-primary tracking-tight mb-4">
+          Soluciones para las tareas que mantienen tu negocio en movimiento.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+          Estructuramos tu backoffice a través de tres pilares de soporte especializados, diseñados para garantizar fluidez y calidad constante.
+        </p>
+</div>
+<!-- 3 Column Services Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Servicio 1: Administración y Soporte Operativo -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 shadow-ambient-1 hover:shadow-ambient-2 hover:border-secondary/60 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+<div class="p-8">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="folder_managed">folder_managed</span>
+</div>
+<span class="text-caption-caps font-caption-caps text-secondary uppercase tracking-wider block mb-1">Tu Aliado En Documentos</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-3">Administración y Soporte Operativo</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+              Nos encargamos de tareas administrativas y operativas para mantener tu empresa organizada y funcionando de forma eficiente.
+            </p>
+<ul class="space-y-2.5 pt-4 border-t border-outline-variant/20 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Gestión de correos corporativos</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Organización de documentos y archivos</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Gestión de agendas y calendarios</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Programación y confirmación de citas</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Seguimiento de tareas pendientes</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Digitación y control de registros</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Actualización de bases de datos</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Excel / Google Sheets especializado</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Investigación en Internet y benchmarking</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Elaboración de reportes periódicos</span>
+</li>
+</ul>
+</div>
+<div class="px-8 pb-8 pt-2">
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg border border-outline-variant/50 text-primary-container font-label-md hover:bg-surface-container-low hover:border-secondary transition-colors" href="#contacto">
+<span>Ver servicio</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Servicio 2: Atención al Cliente -->
+<div class="bg-surface-container-lowest rounded-2xl border-2 border-secondary/40 shadow-ambient-2 flex flex-col justify-between overflow-hidden relative">
+<!-- Highlight badge -->
+<div class="bg-secondary text-on-secondary text-caption-caps font-caption-caps text-center py-1.5 uppercase font-bold tracking-widest">
+            Alta Demanda
+          </div>
+<div class="p-8 pt-6">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="support_agent">support_agent</span>
+</div>
+<span class="text-caption-caps font-caption-caps text-secondary uppercase tracking-wider block mb-1">Tu Aliado En Atención</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-3">Atención al Cliente</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+              Brindamos atención profesional a sus clientes a través de los canales digitales de su empresa, asegurando empatía y resolución.
+            </p>
+<ul class="space-y-2.5 pt-4 border-t border-outline-variant/20 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>WhatsApp Business profesional</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Chat en vivo en sitio web</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Correo corporativo de soporte</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Confirmación y reprogramación de citas</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Respuesta rápida a consultas frecuentes</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Seguimiento riguroso de solicitudes</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Gestión de reclamos con protocolo</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Escalamiento ágil de incidencias</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Seguimiento postventa y satisfacción</span>
+</li>
+</ul>
+</div>
+<div class="px-8 pb-8 pt-2">
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-secondary transition-all" href="#contacto">
+<span>Ver servicio</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Servicio 3: Prospección y Soporte de Ventas -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 shadow-ambient-1 hover:shadow-ambient-2 hover:border-secondary/60 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+<div class="p-8">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="query_stats">query_stats</span>
+</div>
+<span class="text-caption-caps font-caption-caps text-secondary uppercase tracking-wider block mb-1">Tu Aliado En Soporte</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-3">Prospección y Soporte de Ventas</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+              Apoyamos el proceso comercial mediante búsqueda, contacto, seguimiento y calificación de prospectos para nutrir su pipeline.
+            </p>
+<ul class="space-y-2.5 pt-4 border-t border-outline-variant/20 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Búsqueda segmentada de leads</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Construcción de bases de prospectos</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Contacto inicial estructurado</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Email comercial y secuencias</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>WhatsApp comercial outbound</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Seguimiento continuo de prospectos</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Calificación de oportunidades B2B</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Agendamiento de citas para cerradores</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Actualización constante de CRM</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+<span>Reportes comerciales de conversión</span>
+</li>
+</ul>
+</div>
+<div class="px-8 pb-8 pt-2">
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg border border-outline-variant/50 text-primary-container font-label-md hover:bg-surface-container-low hover:border-secondary transition-colors" href="#contacto">
+<span>Ver servicio</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. BENEFICIO / PROPUESTA DE VALOR -->
+<section class="py-20 md:py-28 bg-surface-container-low/40 border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="max-w-3xl mb-16">
+<span class="text-caption-caps font-caption-caps text-secondary uppercase mb-2 inline-block">Crecimiento Inteligente</span>
+<h2 class="text-display-md-mobile md:text-display-md font-display-md text-primary tracking-tight">
+          Más capacidad operativa, sin crear una estructura interna desde cero.
+        </h2>
+</div>
+<!-- 4 Bento Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-7 rounded-2xl border border-outline-variant/30 shadow-ambient-1 hover:border-secondary transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="tune">tune</span>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary mb-2">Flexibilidad</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Contratá capacidad según las necesidades actuales de tu negocio, escalando horas sin fricciones ni trámites complejos.
+          </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-7 rounded-2xl border border-outline-variant/30 shadow-ambient-1 hover:border-secondary transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="speed">speed</span>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary mb-2">Eficiencia</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Delegá tareas operativas y recuperá tiempo estratégico para dedicarte a la visión directiva y las relaciones clave.
+          </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-7 rounded-2xl border border-outline-variant/30 shadow-ambient-1 hover:border-secondary transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="supervised_user_circle">supervised_user_circle</span>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary mb-2">Supervisión</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            El trabajo debe ejecutarse con procesos y seguimiento. Aseguramos control de calidad y revisión continua de entregables.
+          </p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-7 rounded-2xl border border-outline-variant/30 shadow-ambient-1 hover:border-secondary transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="memory">memory</span>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary mb-2">Tecnología</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            ALIA puede apoyarse en herramientas digitales, automatización e IA para mejorar procesos cuando corresponda.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. PLANES Y TARIFAS (#planes) -->
+<section class="py-20 md:py-28 bg-surface-container-lowest" id="planes">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-caption-caps font-caption-caps text-secondary uppercase mb-3 inline-block">Tarifas Transparentes</span>
+<h2 class="text-display-md-mobile md:text-display-md font-display-md text-primary tracking-tight mb-4">
+          Planes diseñados para acompañar el crecimiento de tu operación.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+          Elegí el nivel de cobertura que mejor se adapte a las necesidades actuales de tu negocio.
+        </p>
+</div>
+<!-- Pricing Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+<!-- PLAN 1: Aliado Soporte -->
+<div class="bg-surface-container-low/40 rounded-2xl border border-outline-variant/40 p-8 flex flex-col justify-between shadow-ambient-1 hover:border-secondary transition-all">
+<div>
+<span class="text-caption-caps font-caption-caps text-on-surface-variant uppercase">SOPORTE ÁGIL</span>
+<h3 class="text-headline-md font-headline-md text-primary mt-1 mb-2">Aliado Soporte</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6 min-h-[40px]">
+              Ideal para: Control básico de agendas, confirmación de citas de clientes y revisión diaria de correos corporativos.
+            </p>
+<div class="mb-6 pb-6 border-b border-outline-variant/30">
+<div class="flex items-baseline gap-1">
+<span class="text-display-md-mobile font-display-md-mobile text-primary font-bold">$250</span>
+<span class="text-body-md font-body-md text-on-surface-variant">USD / mes</span>
+</div>
+<span class="inline-block px-2.5 py-1 rounded bg-surface-container text-secondary text-caption-caps font-caption-caps mt-2">
+                20 horas / mes
+              </span>
+</div>
+<ul class="space-y-3 mb-8 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>20 horas mensuales dedicadas</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Lunes a viernes</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Soporte administrativo básico</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Reporte de horas consumidas</span>
+</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant text-primary font-label-md hover:border-secondary hover:text-secondary hover:bg-surface transition-all" href="#contacto">
+            Consultar este plan
+          </a>
+</div>
+<!-- PLAN 2: Aliado Medio Tiempo -->
+<div class="bg-surface-container-lowest rounded-2xl border-2 border-secondary shadow-ambient-2 p-8 flex flex-col justify-between relative">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-secondary text-on-secondary px-4 py-1 rounded-full text-caption-caps font-caption-caps shadow-sm">
+            MÁS POPULAR
+          </div>
+<div>
+<span class="text-caption-caps font-caption-caps text-secondary uppercase">OPERACIÓN DINÁMICA</span>
+<h3 class="text-headline-md font-headline-md text-primary mt-1 mb-2">Aliado Medio Tiempo</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6 min-h-[40px]">
+              Ideal para: Gestión activa de leads, respuestas a clientes en tiempo real y prospección regular.
+            </p>
+<div class="mb-6 pb-6 border-b border-outline-variant/30">
+<div class="flex items-baseline gap-1">
+<span class="text-display-md-mobile font-display-md-mobile text-primary font-bold">$900</span>
+<span class="text-body-md font-body-md text-on-surface-variant">USD / mes</span>
+</div>
+<span class="inline-block px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-semibold text-caption-caps font-caption-caps mt-2">
+                80 horas / mes
+              </span>
+</div>
+<ul class="space-y-3 mb-8 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>80 horas mensuales asignadas</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>4 horas diarias continuas</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Lunes a viernes</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Atención, seguimiento y prospección</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Supervisión operativa semanal</span>
+</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-secondary transition-all shadow-sm" href="#contacto">
+            Consultar este plan
+          </a>
+</div>
+<!-- PLAN 3: Aliado Tiempo Completo -->
+<div class="bg-surface-container-low/40 rounded-2xl border border-outline-variant/40 p-8 flex flex-col justify-between shadow-ambient-1 hover:border-secondary transition-all">
+<div>
+<span class="text-caption-caps font-caption-caps text-on-surface-variant uppercase">MAYOR COBERTURA</span>
+<h3 class="text-headline-md font-headline-md text-primary mt-1 mb-2">Aliado Tiempo Completo</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6 min-h-[40px]">
+              Ideal para: Delegar por completo la administración, atención y apoyo comercial de la operación.
+            </p>
+<div class="mb-6 pb-6 border-b border-outline-variant/30">
+<div class="flex items-baseline gap-1">
+<span class="text-display-md-mobile font-display-md-mobile text-primary font-bold">$1,350</span>
+<span class="text-body-md font-body-md text-on-surface-variant">USD / mes</span>
+</div>
+<span class="inline-block px-2.5 py-1 rounded bg-surface-container text-secondary text-caption-caps font-caption-caps mt-2">
+                160 horas / mes
+              </span>
+</div>
+<ul class="space-y-3 mb-8 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>160 horas mensuales completas</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>8 horas diarias (jornada total)</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Lunes a viernes</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Cobertura completa backoffice + ventas</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Canal directo prioritario en tiempo real</span>
+</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant text-primary font-label-md hover:border-secondary hover:text-secondary hover:bg-surface transition-all" href="#contacto">
+            Consultar este plan
+          </a>
+</div>
+</div>
+<!-- Pricing Disclaimer -->
+<div class="mt-10 text-center">
+<p class="text-body-sm font-body-sm text-on-surface-variant flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="info">info</span>
+          Los planes pueden ajustarse según el volumen, necesidades y alcance de cada operación.
+        </p>
+</div>
+</div>
+</section>
+<!-- 6. ¿CÓMO EMPEZAMOS? (#como-funciona) -->
+<section class="py-20 md:py-28 bg-surface-container-low/50 border-b border-outline-variant/20" id="como-funciona">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-caption-caps font-caption-caps text-secondary uppercase mb-3 inline-block">Onboarding Ágil</span>
+<h2 class="text-display-md-mobile md:text-display-md font-display-md text-primary tracking-tight mb-4">
+          Comenzar con ALIA es sencillo.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+          Sin procesos burocráticos engorrosos. Diseñado para integrarnos a tu ritmo de trabajo en menos de 48 horas.
+        </p>
+</div>
+<!-- Horizontal Timeline (1, 2, 3) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 shadow-ambient-1 relative group">
+<div class="flex items-center justify-between mb-6">
+<span class="text-headline-lg font-headline-lg font-extrabold text-secondary/30 group-hover:text-secondary transition-colors">01</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="call">call</span>
+</div>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary mb-3">Llamada de alineación (15 minutos)</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Evaluamos tus necesidades, flujo de trabajo y el tipo de apoyo que requiere tu empresa para definir prioridades concretas.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 shadow-ambient-1 relative group">
+<div class="flex items-center justify-between mb-6">
+<span class="text-headline-lg font-headline-lg font-extrabold text-secondary/30 group-hover:text-secondary transition-colors">02</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="settings_suggest">settings_suggest</span>
+</div>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary mb-3">Configuración operativa</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Definimos las tareas, herramientas, canales de comunicación y accesos necesarios con estrictos protocolos de confidencialidad.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 shadow-ambient-1 relative group">
+<div class="flex items-center justify-between mb-6">
+<span class="text-headline-lg font-headline-lg font-extrabold text-secondary/30 group-hover:text-secondary transition-colors">03</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="rocket_launch">rocket_launch</span>
+</div>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary mb-3">Inicio de operaciones</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Ponemos en marcha el servicio y comenzamos a trabajar como parte de tu operación con reportes de avance y supervisión.
+          </p>
+</div>
+</div>
+<div class="mt-14 text-center">
+<a class="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-secondary transition-all shadow-ambient-1" href="#contacto">
+<span class="material-symbols-outlined text-[18px]" data-icon="calendar_month">calendar_month</span>
+<span>Agendar mi llamada</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 7. SEGURIDAD Y CONFIANZA (#seguridad) -->
+<section class="py-20 md:py-28 bg-surface" id="seguridad">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high text-secondary text-caption-caps font-caption-caps mb-3">
+<span class="material-symbols-outlined text-[16px]" data-icon="shield">shield</span>
+<span>PROTOCOLO INSTITUCIONAL</span>
+</div>
+<h2 class="text-display-md-mobile md:text-display-md font-display-md text-primary tracking-tight mb-4">
+          Tu información y la seguridad de tu operación son prioridad.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+          ALIA opera bajo una política estricta de resguardo y límites claros de acceso.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Tarjeta destacada: Límites explícitos (ALIA NO MANEJA) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-8 shadow-ambient-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-xl bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" data-icon="gpp_bad">gpp_bad</span>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary font-bold tracking-tight">ALIA NO MANEJA:</h3>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+              Para garantizar tu absoluta tranquilidad y transparencia jurídica, establecemos fronteras operativas claras desde el primer día:
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-error text-[20px]" data-icon="block">block</span>
+<span class="text-label-md font-label-md text-primary">Dinero de clientes</span>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-error text-[20px]" data-icon="block">block</span>
+<span class="text-label-md font-label-md text-primary">Transferencias bancarias</span>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-error text-[20px]" data-icon="block">block</span>
+<span class="text-label-md font-label-md text-primary">Cuentas bancarias</span>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-error text-[20px]" data-icon="block">block</span>
+<span class="text-label-md font-label-md text-primary">Tarjetas de crédito o débito</span>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-error text-[20px]" data-icon="block">block</span>
+<span class="text-label-md font-label-md text-primary">Credenciales financieras</span>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-error text-[20px]" data-icon="block">block</span>
+<span class="text-label-md font-label-md text-primary">Custodia de fondos</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20">
+<span class="text-caption-caps font-caption-caps text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" data-icon="lock">lock</span>
+              POLÍTICA DE CERO ACCESO FINANCIERO REGISTRADA
+            </span>
+</div>
+</div>
+<!-- Bloque complementario: Accesos Limitados -->
+<div class="lg:col-span-5 bg-surface-container-low rounded-2xl border border-outline-variant/40 p-8 flex flex-col justify-between shadow-ambient-1">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest text-secondary flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-2xl" data-icon="admin_panel_settings">admin_panel_settings</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Trabajamos con accesos limitados</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Solicitamos únicamente los accesos necesarios para ejecutar cada tarea y revocamos los accesos cuando dejan de ser necesarios.
+            </p>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]" data-icon="key">key</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-primary">Acceso por rol estricto</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Configuración a través de gestores de contraseñas seguros y perfiles de invitado.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]" data-icon="description">description</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-primary">Acuerdo de Confidencialidad (NDA)</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Formalización legal de sigilo comercial y resguardo de datos antes de iniciar operaciones.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-caption-caps font-caption-caps text-secondary">
+<span>Privacidad y Control Total</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="verified">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. ¿PARA QUIÉN ES ALIA? -->
+<section class="py-20 md:py-28 bg-surface-container-lowest border-b border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-caption-caps font-caption-caps text-secondary uppercase mb-3 inline-block">Segmentos Atendidos</span>
+<h2 class="text-display-md-mobile md:text-display-md font-display-md text-primary tracking-tight mb-4">
+          Diseñado para negocios que necesitan hacer más con su tiempo.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+          Entendemos los retos específicos de la pequeña y mediana empresa latinoamericana, así como de profesionales independientes de alto valor.
+        </p>
+</div>
+<!-- 3 Perfiles Clave -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<!-- Perfil 1 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/40 shadow-ambient-1 hover:border-secondary transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="domain">domain</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-2">PYMES</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Para empresas que necesitan apoyo operativo sin aumentar inmediatamente su estructura interna ni contraer pasivos laborales pesados.
+          </p>
+</div>
+<!-- Perfil 2 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/40 shadow-ambient-1 hover:border-secondary transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="badge">badge</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-2">Profesionales</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Para consultores, especialistas y profesionales que necesitan delegar tareas administrativas y seguimiento para atender a más clientes.
+          </p>
+</div>
+<!-- Perfil 3 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/40 shadow-ambient-1 hover:border-secondary transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="rocket">rocket</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-2">Emprendimientos</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Para negocios en crecimiento que necesitan apoyo en administración, atención y ventas para consolidar sus primeros ciclos de escala.
+          </p>
+</div>
+</div>
+<!-- Subsección Áreas donde podemos comenzar -->
+<div class="bg-surface-container-low rounded-2xl p-8 md:p-10 border border-outline-variant/30">
+<h3 class="text-title-lg font-title-lg text-primary text-center mb-8">
+          Áreas donde podemos comenzar de inmediato:
+        </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="real_estate_agent">real_estate_agent</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-primary">Bienes raíces</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Agendamiento, filtrado de interesados y actualización de portales.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="shopping_bag">shopping_bag</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-primary">E-commerce</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Soporte postventa, seguimiento de envíos y atención por WhatsApp.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="business_center">business_center</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-primary">Empresas y servicios</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Gestión de calendarios, minutas, reportes y cotizaciones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. CTA FINAL PRE-FOOTER -->
+<section class="py-20 md:py-24 bg-gradient-to-br from-primary via-primary-container to-secondary text-on-primary relative overflow-hidden">
+<!-- Ambient elements -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute left-10 top-10 w-72 h-72 bg-secondary/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="max-w-5xl mx-auto px-6 md:px-12 text-center relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md border border-surface-container-lowest/20 p-1.5 mx-auto mb-6 flex items-center justify-center shadow-lg">
+<img alt="ALIA Emblem" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8zTRt6dJfdB5tuoONkKbdwFjizSi0Wm7fIr3vmdf4wUziAwY-FiZpgTlGkRNzhhPmj6HweqOxXTgwd1FTn2grv9N87jbKqCc3T_cTfodO_74C5wDR5AfVNvEGVfJI6gUJjT44k3RR235joFFGtaMRRMJSqW1-0HeuDteUYY1WfiplhKRxNLmxx2K-165mO_foTt_D1wDaRMpAuddwIdP1oxXd-L6TOlYejjQMRee2b__UlGr6jCX8DtcIMjFq-ZDANeA"/>
+</div>
+<h2 class="text-display-md-mobile md:text-display-md font-display-md text-surface-bright tracking-tight mb-6">
+        Dejá de dedicar tu tiempo estratégico a tareas operativas.
+      </h2>
+<p class="text-body-lg font-body-lg text-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
+        Contanos qué necesitas delegar y evaluemos juntos cómo ALIA puede convertirse en parte de tu operación.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-surface-bright text-primary font-label-md hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all duration-200 shadow-ambient-2 active:scale-95 font-semibold" href="#contacto">
+<span class="material-symbols-outlined text-[20px]" data-icon="calendar_today">calendar_today</span>
+<span>Agendar una llamada de 15 minutos</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-surface-container-lowest/10 border border-surface-container-lowest/30 text-surface-bright font-label-md hover:bg-surface-container-lowest/20 transition-all duration-200 active:scale-95" href="#contacto">
+<span class="material-symbols-outlined text-[20px]" data-icon="mail">mail</span>
+<span>Contactar a ALIA</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 10. CONTACTO (#contacto) -->
+<section class="py-20 md:py-28 bg-surface" id="contacto">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Info Column -->
+<div class="lg:col-span-5">
+<span class="text-caption-caps font-caption-caps text-secondary uppercase mb-2 inline-block">Atención Personalizada</span>
+<h2 class="text-display-md-mobile md:text-headline-lg font-display-md md:font-headline-lg text-primary tracking-tight mb-4">
+            Hablemos sobre tu operación.
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-8 leading-relaxed">
+            Completá el formulario y nos pondremos en contacto para coordinar una breve sesión de evaluación de necesidades y alcance.
+          </p>
+<!-- Direct Channels & WhatsApp block -->
+<div class="space-y-6">
+<div class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-ambient-1">
+<span class="text-label-sm font-label-sm text-on-surface-variant block mb-2">Respuesta inmediata</span>
+<h3 class="text-title-md font-title-md text-primary mb-3">También podés escribirnos por WhatsApp.</h3>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#25D366]/10 text-[#075E54] border border-[#25D366]/30 font-label-md hover:bg-[#25D366]/20 transition-colors" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+<span>[WhatsApp Directo ALIA]</span>
+</a>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-ambient-1">
+<span class="text-label-sm font-label-sm text-on-surface-variant block mb-3">Canales oficiales</span>
+<div class="space-y-3">
+<div class="flex items-center gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]" data-icon="alternate_email">alternate_email</span>
+<span>[Correo electrónico: contacto@aliaasistencia.com]</span>
+</div>
+<div class="flex items-center gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]" data-icon="business">business</span>
+<span>[LinkedIn: ALIA Asistencia Virtual]</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Column -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-8 md:p-10 rounded-2xl border border-outline-variant/40 shadow-ambient-2">
+<h3 class="text-headline-sm font-headline-sm text-primary mb-6">Solicitud de Diagnóstico Operativo</h3>
+<form class="space-y-5" id="contact-form" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! El equipo de ALIA se comunicará contigo a la brevedad.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5" for="name">Nombre completo</label>
+<input class="w-full h-11 px-3.5 rounded-lg bg-surface border border-outline-variant/60 text-on-surface text-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none" id="name" placeholder="Tu nombre" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5" for="company">Empresa u Organización</label>
+<input class="w-full h-11 px-3.5 rounded-lg bg-surface border border-outline-variant/60 text-on-surface text-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none" id="company" placeholder="Nombre de tu negocio" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5" for="email">Correo electrónico</label>
+<input class="w-full h-11 px-3.5 rounded-lg bg-surface border border-outline-variant/60 text-on-surface text-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none" id="email" placeholder="tu@empresa.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5" for="phone">WhatsApp / Teléfono</label>
+<input class="w-full h-11 px-3.5 rounded-lg bg-surface border border-outline-variant/60 text-on-surface text-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none" id="phone" placeholder="+54 9 11 ..." required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5" for="support-type">¿Qué tipo de apoyo necesitas?</label>
+<select class="w-full h-11 px-3.5 rounded-lg bg-surface border border-outline-variant/60 text-on-surface text-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none" id="support-type">
+<option value="administracion">Administración y Soporte Operativo</option>
+<option value="atencion">Atención al Cliente</option>
+<option value="prospeccion">Prospección y Soporte de Ventas</option>
+<option value="no-estoy-seguro">No estoy seguro (requiero asesoramiento)</option>
+<option value="otro">Otro tipo de gestión</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5" for="message">Mensaje o detalle de requerimiento</label>
+<textarea class="w-full p-3.5 rounded-lg bg-surface border border-outline-variant/60 text-on-surface text-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none" id="message" placeholder="Contanos brevemente qué tareas te gustaría comenzar a delegar..." rows="4"></textarea>
+</div>
+<div class="pt-2">
+<button class="w-full py-4 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-secondary transition-all duration-200 shadow-ambient-1 active:scale-98 font-semibold flex items-center justify-center gap-2" type="submit">
+<span>Enviar solicitud</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="send">send</span>
+</button>
+</div>
+<p class="text-body-sm font-body-sm text-outline text-center">
+                Tus datos están protegidos bajo nuestro protocolo de confidencialidad estricta.
+              </p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER (PREDICTED COMPONENT FROM JSON) -->
+<footer class="w-full block bg-primary text-on-primary border-t border-outline-variant/20">
+<div class="w-full px-6 md:px-12 py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Brand & Motto -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left gap-2">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-bright/10 p-1 flex items-center justify-center">
+<img alt="ALIA Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAktAKi3TNoiYqyWTYYXu446g89CMyvgMq0Bpp1LzQpDF7W5zZVzacRGZX3wOzcijgdvsajNFNdkVyKxm4yXS7FjK1hgnL4CQ2Kp9krGAOM8zCqX-WhvLOPYAAE2lz20RlCfD3dEq6Q2htcfletqby8Aesn2STxFlM-YNEFx5Tu38FgsXVIflcdSx8-cEBa8OYwlWa__lK9l_GbUJikak_aHTD8smVHO9sOAGYxm-Hktx0FHrkZKYlzNpEllbRJFIWOJZw"/>
+</div>
+<span class="text-headline-md font-headline-md font-bold text-surface-bright tracking-tight">ALIA</span>
+</div>
+<p class="text-caption-caps font-caption-caps text-secondary-container tracking-wider">
+          Somos tu aliado en cada gestión.
+        </p>
+<p class="text-body-sm font-body-sm text-on-primary-container max-w-sm">
+          Asistencia virtual profesional para empresas y profesionales de Latinoamérica.
+        </p>
+</div>
+<!-- Quick Nav Links -->
+<div class="flex flex-wrap justify-center gap-6 text-label-sm font-label-sm">
+<a class="text-on-primary-container hover:text-surface-bright transition-colors" href="#inicio">Inicio</a>
+<a class="text-on-primary-container hover:text-surface-bright transition-colors" href="#servicios">Servicios</a>
+<a class="text-on-primary-container hover:text-surface-bright transition-colors" href="#planes">Planes</a>
+<a class="text-on-primary-container hover:text-surface-bright transition-colors" href="#como-funciona">Cómo funciona</a>
+<a class="text-on-primary-container hover:text-surface-bright transition-colors" href="#seguridad">Seguridad</a>
+<a class="text-on-primary-container hover:text-surface-bright transition-colors" href="#contacto">Contacto</a>
+</div>
+</div>
+<!-- Sub-footer copyright & formal links -->
+<div class="w-full border-t border-outline-variant/10 py-6 px-6 md:px-12 max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-body-sm font-body-sm text-on-primary-container">
+<p>© 2026 ALIA. Todos los derechos reservados. Operando con excelencia y confidencialidad para toda América Latina.</p>
+<div class="flex items-center gap-5 text-label-sm">
+<a class="hover:text-surface-bright transition-colors" href="#seguridad">Políticas de Privacidad</a>
+<a class="hover:text-surface-bright transition-colors" href="#seguridad">Protocolo de Seguridad</a>
+<a class="hover:text-surface-bright transition-colors" href="#contacto">Canales Oficiales</a>
+</div>
+</div>
+</footer>
+<!-- Micro-interactions Script -->
+<script>
+    // Mobile navigation toggle
+    const toggleBtn = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (toggleBtn && mobileMenu) {
+      toggleBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu upon clicking any link
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+</body></html>
