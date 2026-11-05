@@ -75,44 +75,48 @@ const benefits = [
 
 const plans = [
   {
-    name: "Esencial",
+    name: "Básico",
     label: "Para comenzar",
     description:
-      "Una opción práctica para empresas y profesionales que necesitan apoyo operativo puntual.",
+      "Ideal para tareas puntuales y apoyo organizativo.",
+    price: "US$250",
+    hours: "20 horas mensuales",
+    hourlyRate: "US$12.50 por hora",
     features: [
-      "Atención al cliente",
-      "Gestión de canales",
-      "Seguimiento de solicitudes",
-      "Protocolos de atención",
-      "Supervisión ALIA",
+      "1 asistente dedicado",
+      "Supervisión y reporte mensual",
+      "Flexibilidad entre las tres líneas de servicio",
     ],
   },
   {
-    name: "Profesional",
+    name: "Pro",
     label: "Más solicitado",
     description:
-      "Mayor cobertura para operaciones que requieren apoyo constante en diferentes actividades.",
+      "Para empresas con mayor demanda administrativa y comercial.",
+    price: "US$600",
+    hours: "80 horas mensuales",
+    hourlyRate: "US$7.50 por hora",
     features: [
-      "Atención al cliente",
-      "Ventas y generación de leads",
-      "Seguimiento de clientes",
-      "Supervisión ALIA",
-      "Reportes de seguimiento",
+      "Asistente con supervisión presencial",
+      "Respaldo operativo ante ausencias",
+      "Canal prioritario por WhatsApp corporativo o Slack",
+      "Distribución flexible de horas y tareas",
     ],
     featured: true,
   },
   {
-    name: "Personalizado",
-    label: "Según necesidad",
+    name: "Full",
+    label: "Cobertura completa",
     description:
-      "Diseñamos una solución específica cuando tu operación requiere una combinación particular de servicios.",
+      "Jornada completa como extensión del equipo del cliente.",
+    price: "US$1,200",
+    hours: "160 horas mensuales",
+    hourlyRate: "US$7.50 por hora",
     features: [
-      "Alcance personalizado",
-      "Combinación de servicios",
-      "Procesos adaptados",
-      "Capacitación específica",
-      "Supervisión continua",
-      "Reportes personalizados",
+      "Supervisor de calidad dedicado",
+      "Reemplazo ante contingencias",
+      "Reunión quincenal de indicadores (KPIs)",
+      "Integración con ERP y CRM corporativo",
     ],
   },
 ];
@@ -336,8 +340,9 @@ export default function ServiciosPage() {
             </h2>
 
             <p className="text-body-md leading-relaxed text-on-surface-variant md:text-body-lg">
-              Los planes sirven como referencia. El alcance final se define
-              después de conocer las necesidades específicas de tu operación.
+              Elige la cobertura que mejor se adapta a tu operación. Cada plan
+              combina horas de servicio, acompañamiento y flexibilidad para
+              ayudarte a delegar con confianza.
             </p>
           </div>
 
@@ -376,7 +381,7 @@ export default function ServiciosPage() {
                 </h3>
 
                 <p
-                  className={`mb-6 min-h-[72px] text-body-sm leading-relaxed ${
+                  className={`mb-5 min-h-[60px] text-body-sm leading-relaxed ${
                     plan.featured
                       ? "text-primary-fixed-dim"
                       : "text-on-surface-variant"
@@ -384,6 +389,58 @@ export default function ServiciosPage() {
                 >
                   {plan.description}
                 </p>
+
+                <div
+                  className={`mb-6 rounded-xl p-4 ${
+                    plan.featured
+                      ? "bg-primary/35"
+                      : "bg-surface-container-low"
+                  }`}
+                >
+                  <div className="flex items-end justify-between gap-3">
+                    <div>
+                      <div
+                        className={`text-display-md-mobile font-display-md leading-none ${
+                          plan.featured
+                            ? "text-surface-bright"
+                            : "text-primary"
+                        }`}
+                      >
+                        {plan.price}
+                      </div>
+                      <span
+                        className={`mt-1 block text-label-sm ${
+                          plan.featured
+                            ? "text-primary-fixed-dim"
+                            : "text-on-surface-variant"
+                        }`}
+                      >
+                        por mes
+                      </span>
+                    </div>
+                    <span
+                      className={`rounded-full px-2.5 py-1 text-label-sm font-semibold ${
+                        plan.featured
+                          ? "bg-secondary-container text-primary"
+                          : "bg-surface-container-high text-secondary"
+                      }`}
+                    >
+                      {plan.hourlyRate}
+                    </span>
+                  </div>
+                  <div
+                    className={`mt-4 flex items-center gap-2 border-t pt-3 text-body-sm ${
+                      plan.featured
+                        ? "border-surface-bright/10 text-primary-fixed-dim"
+                        : "border-outline-variant/20 text-on-surface-variant"
+                    }`}
+                  >
+                    <span className="material-symbols-outlined text-[18px]">
+                      schedule
+                    </span>
+                    {plan.hours}
+                  </div>
+                </div>
 
                 <div
                   className={`mb-6 border-t pt-5 ${
