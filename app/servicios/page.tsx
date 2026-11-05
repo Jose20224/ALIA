@@ -85,7 +85,7 @@ const plans = [
     features: [
       "1 asistente dedicado",
       "Supervisión y reporte mensual",
-      "Flexibilidad entre las tres líneas de servicio",
+      "Flexibilidad entre las dos líneas de servicio",
     ],
   },
   {
