@@ -315,8 +315,8 @@ export default function NosotrosPage() {
                   Ayudar a empresas, profesionales y emprendimientos de
                   Latinoamérica a optimizar su tiempo y operación mediante
                   servicios de asistencia virtual confiables, eficientes y
-                  flexibles en administración, atención al cliente y apoyo
-                  comercial, respaldados por talento humano, procesos,
+                  flexibles en atención al cliente y apoyo comercial,
+                  respaldados por talento humano, procesos,
                   supervisión y tecnología.
                 </p>
 
@@ -326,7 +326,7 @@ export default function NosotrosPage() {
                   </span>
 
                   <div className="flex flex-wrap gap-1.5">
-                    {["Administración", "Atención al cliente", "Apoyo comercial"].map(
+                    {["Atención al cliente", "Apoyo comercial"].map(
                       (item) => (
                         <span
                           key={item}

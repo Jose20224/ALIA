@@ -6,10 +6,42 @@ import RevealAnimations from "@/components/reveal-animations";
 
 export default function ContactoPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setSubmitted(true);
+    setError("");
+    setIsSubmitting(true);
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(formData.entries())),
+      });
+
+      if (!response.ok) {
+        const result = (await response.json().catch(() => null)) as
+          | { error?: string }
+          | null;
+        throw new Error(result?.error ?? "No pudimos enviar tu solicitud.");
+      }
+
+      setSubmitted(true);
+      form.reset();
+    } catch (submissionError) {
+      setError(
+        submissionError instanceof Error
+          ? submissionError.message
+          : "No pudimos enviar tu solicitud. Intenta nuevamente.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -129,25 +161,39 @@ export default function ContactoPage() {
 
               <div className="space-y-3">
                 <a
-                  href="mailto:contacto@alia.com"
+                  href="mailto:saborglobalofficial@gmail.com"
                   className="flex items-center gap-3 text-body-sm text-on-surface-variant transition-colors hover:text-secondary"
                 >
                   <span className="material-symbols-outlined text-[20px] text-secondary">
                     mail
                   </span>
 
-                  <span>contacto@alia.com</span>
+                  <span>saborglobalofficial@gmail.com</span>
                 </a>
 
                 <a
-                  href="tel:+50500000000"
+                  href="https://wa.me/50586854730"
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-center gap-3 text-body-sm text-on-surface-variant transition-colors hover:text-secondary"
                 >
                   <span className="material-symbols-outlined text-[20px] text-secondary">
                     phone
                   </span>
 
-                  <span>+505 0000 0000</span>
+                  <span>+505 8685 4730 · WhatsApp</span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/francisco-campos-4803961a1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-3 text-body-sm text-on-surface-variant transition-colors hover:text-secondary"
+                >
+                  <span className="material-symbols-outlined text-[20px] text-secondary">
+                    business_center
+                  </span>
+                  <span>Perfil de LinkedIn</span>
                 </a>
 
                 <div className="flex items-center gap-3 text-body-sm text-on-surface-variant">
@@ -181,6 +227,10 @@ export default function ContactoPage() {
                     onSubmit={handleSubmit}
                     className="space-y-5"
                   >
+                    <div className="hidden" aria-hidden="true">
+                      <label htmlFor="website">Sitio web</label>
+                      <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+                    </div>
                     <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                       <div>
                         <label
@@ -273,9 +323,6 @@ export default function ContactoPage() {
                         <option value="" disabled>
                           Selecciona una opción
                         </option>
-                        <option value="administracion">
-                          Administración
-                        </option>
                         <option value="atencion">
                           Atención al cliente
                         </option>
@@ -328,14 +375,22 @@ export default function ContactoPage() {
 
                     <button
                       type="submit"
+                      disabled={isSubmitting}
+                      aria-busy={isSubmitting}
                       className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary-container px-6 py-3.5 text-label-md text-on-primary shadow-ambient-1 transition-all hover:bg-secondary hover:shadow-ambient-2 active:scale-[0.98]"
                     >
-                      <span>Solicitar diagnóstico</span>
+                      <span>{isSubmitting ? "Enviando..." : "Solicitar diagnóstico"}</span>
 
                       <span className="material-symbols-outlined text-[18px]">
                         arrow_forward
                       </span>
                     </button>
+
+                    {error && (
+                      <p role="alert" className="rounded-lg bg-error-container px-4 py-3 text-body-sm text-on-error-container">
+                        {error}
+                      </p>
+                    )}
 
                     <p className="text-center text-caption-md text-on-surface-variant">
                       Diagnóstico inicial sin costo y sin compromiso.

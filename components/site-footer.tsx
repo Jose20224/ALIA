@@ -23,8 +23,6 @@ export function SiteFooter() {
               Asistencia virtual para empresas, profesionales y emprendimientos de Latinoamérica.
             </p>
             <div className="flex flex-wrap gap-2 mt-5 text-body-sm text-on-primary-container">
-              <span>Administración</span>
-              <span aria-hidden="true">•</span>
               <span>Atención al cliente</span>
               <span aria-hidden="true">•</span>
               <span>Ventas y generación de leads</span>
@@ -62,6 +60,17 @@ export function SiteFooter() {
               <Link className="text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" href="/contacto#seguridad">
                 Protocolo de confidencialidad
               </Link>
+            </div>
+            <div className="mt-6 flex flex-col gap-3">
+              <a className="text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" href="mailto:saborglobalofficial@gmail.com">
+                saborglobalofficial@gmail.com
+              </a>
+              <a className="text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" href="https://wa.me/50586854730" target="_blank" rel="noreferrer">
+                WhatsApp: +505 8685 4730
+              </a>
+              <a className="text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" href="https://www.linkedin.com/in/francisco-campos-4803961a1" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>

@@ -21,11 +21,10 @@ export const metadata: Metadata = {
     template: "%s | ALIA",
   },
   description:
-    "ALIA brinda servicios de administración, atención al cliente, ventas y generación de leads para empresas, profesionales y emprendedores.",
+    "ALIA brinda servicios de atención al cliente, ventas y generación de leads para empresas, profesionales y emprendedores.",
   keywords: [
     "asistencia virtual",
     "asistencia ejecutiva",
-    "administración remota",
     "atención al cliente",
     "generación de leads",
     "ALIA",
@@ -85,7 +84,6 @@ export default function RootLayout({
               description: metadata.description,
               areaServed: "Latinoamérica",
               serviceType: [
-                "Administración y apoyo operativo",
                 "Atención al cliente multicanal",
                 "Ventas y generación de leads",
               ],

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Agenda un diagnóstico gratuito con ALIA y descubre cómo delegar tus tareas operativas, administrativas y comerciales.",
+    "Agenda un diagnóstico gratuito con ALIA y descubre cómo delegar la atención al cliente y el apoyo comercial de tu negocio.",
   alternates: { canonical: "/contacto" },
   openGraph: {
     title: "Contacto | ALIA",

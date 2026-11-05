@@ -68,7 +68,7 @@ export default function HomePage() {
                 Nosotros nos encargamos de las gestiones que consumen tu tiempo.
               </h2>
               <p className="text-body-md md:text-title-lg text-on-surface-variant font-medium mb-4 max-w-2xl leading-relaxed">
-                Administración, atención al cliente y apoyo comercial respaldados por talento humano, procesos y supervisión.
+                Atención al cliente y apoyo comercial respaldados por talento humano, procesos y supervisión.
               </p>
               <p className="text-body-sm md:text-body-md text-on-surface-variant mb-7 md:mb-8 max-w-2xl leading-relaxed">
                 En ALIA ayudamos a empresas, profesionales y emprendimientos de Latinoamérica a delegar tareas operativas para que puedan concentrarse en lo que realmente impulsa su negocio.
@@ -179,7 +179,7 @@ export default function HomePage() {
                       <span className="text-caption-caps font-caption-caps text-on-surface-variant">Supervisión operativa</span>
                     </div>
                     <div className="p-2.5 rounded-lg bg-surface-container-low">
-                      <span className="block text-headline-sm font-headline-sm text-secondary font-bold">3 líneas</span>
+                      <span className="block text-headline-sm font-headline-sm text-secondary font-bold">2 líneas</span>
                       <span className="text-caption-caps font-caption-caps text-on-surface-variant">En un mismo plan</span>
                     </div>
                   </div>
@@ -203,15 +203,15 @@ export default function HomePage() {
               <span className="material-symbols-outlined text-[16px]">grid_view</span> RESPALDO A TU PRODUCTIVIDAD
             </span>
             <h2 className="text-headline-md md:text-display-md font-headline-md md:font-display-md text-primary tracking-tight mb-3">Tu aliado en cada gestión</h2>
-            <p className="text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">Un modelo de apoyo diseñado para cubrir las áreas que más tiempo consumen a directivos y equipos.</p>
+            <p className="text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">Un modelo de apoyo diseñado para fortalecer la relación con tus clientes y hacer avanzar tus oportunidades.</p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
             {[
-              ['assignment_turned_in', 'Organización', 'Agendas, itinerarios y recordatorios críticos al día.'],
               ['support_agent', 'Atención', 'WhatsApp, chat y correo con protocolo de marca.'],
-              ['description', 'Documentos', 'Reportes, cotizaciones y archivo clasificado.'],
-              ['handyman', 'Soporte comercial', 'CRM, seguimiento de leads y continuidad comercial.'],
+              ['forum', 'Experiencia', 'Respuestas cercanas, oportunas y orientadas a resolver.'],
+              ['trending_up', 'Prospección', 'Búsqueda y calificación de oportunidades comerciales.'],
+              ['handshake', 'Continuidad', 'Seguimiento de leads para mantener activa cada oportunidad.'],
             ].map(([icon, title, text]) => (
               <div key={title} className="bg-white rounded-2xl border border-outline-variant/30 p-5 text-center reveal card-hover">
                 <div className="w-11 h-11 mx-auto rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-3">
@@ -233,25 +233,15 @@ export default function HomePage() {
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/30 text-secondary text-caption-caps font-caption-caps mb-3">
                 <span className="material-symbols-outlined text-[16px]">folder_managed</span> CATÁLOGO DE ESPECIALIDADES
               </span>
-              <h2 className="text-headline-md md:text-display-md font-headline-md md:font-display-md text-primary tracking-tight mb-3">3 líneas de servicio especializadas</h2>
+              <h2 className="text-headline-md md:text-display-md font-headline-md md:font-display-md text-primary tracking-tight mb-3">Dos líneas para hacer avanzar tu negocio</h2>
               <p className="text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">Diseñadas para adaptarse al ritmo de directivos, fundadores y equipos.</p>
             </div>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/40 text-secondary text-label-sm font-label-sm shadow-sm shrink-0">
-              <span className="material-symbols-outlined text-[18px]">swap_horiz</span> Flexibilidad total de horas entre las 3 líneas
+              <span className="material-symbols-outlined text-[18px]">swap_horiz</span> Flexibilidad total entre las 2 líneas
             </span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-6">
-            <article className="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 shadow-ambient-1 reveal card-hover flex flex-col">
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-11 h-11 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary"><span className="material-symbols-outlined text-[22px]">admin_panel_settings</span></div>
-                <span className="px-2.5 py-1 rounded-full bg-surface-container text-secondary text-caption-caps font-caption-caps">17 gestiones</span>
-              </div>
-              <h3 className="text-headline-sm font-headline-sm text-primary mb-2">Administración y apoyo operativo</h3>
-              <p className="text-body-sm text-on-surface-variant mb-4 flex-1">Descarga tareas manuales y repetitivas para recuperar el foco directivo.</p>
-              <Link className="inline-flex items-center gap-1.5 text-secondary font-label-md hover:text-primary transition-colors" href="/servicios">Ver catálogo <span className="material-symbols-outlined text-[16px]">arrow_forward</span></Link>
-            </article>
-
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
             <article className="bg-primary-container text-on-primary rounded-2xl p-6 shadow-ambient-2 reveal card-hover flex flex-col relative overflow-hidden">
               <span className="absolute top-4 right-4 text-[10px] font-bold tracking-wide bg-white/15 px-2.5 py-1 rounded-full">DESTACADA</span>
               <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-secondary-container mb-4"><span className="material-symbols-outlined text-[22px]">headset_mic</span></div>
@@ -263,7 +253,7 @@ export default function HomePage() {
             <article className="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 shadow-ambient-1 reveal card-hover flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <div className="w-11 h-11 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary"><span className="material-symbols-outlined text-[22px]">trending_up</span></div>
-                <span className="px-2.5 py-1 rounded-full bg-surface-container text-secondary text-caption-caps font-caption-caps">14 gestiones</span>
+                <span className="px-2.5 py-1 rounded-full bg-surface-container text-secondary text-caption-caps font-caption-caps">Apoyo comercial</span>
               </div>
               <h3 className="text-headline-sm font-headline-sm text-primary mb-2">Ventas y generación de leads</h3>
               <p className="text-body-sm text-on-surface-variant mb-4 flex-1">Prospección, calificación, seguimiento y actualización de CRM.</p>

@@ -5,31 +5,17 @@ import RevealAnimations from "@/components/reveal-animations";
 export const metadata: Metadata = {
   title: "Servicios de asistencia virtual",
   description:
-    "Descubre los servicios de ALIA en administración, atención al cliente, ventas y generación de leads para hacer crecer tu negocio.",
+    "Descubre los servicios de atención al cliente y apoyo comercial de ALIA para hacer crecer tu negocio.",
   alternates: { canonical: "/servicios" },
   openGraph: {
     title: "Servicios de asistencia virtual | ALIA",
     description:
-      "Administración, atención al cliente y soporte comercial con procesos y supervisión.",
+      "Atención al cliente y soporte comercial con procesos y supervisión.",
     url: "/servicios",
   },
 };
 
 const services = [
-  {
-    icon: "admin_panel_settings",
-    title: "Administración",
-    description:
-      "Organización y gestión de tareas administrativas para que puedas concentrarte en lo que realmente importa.",
-    items: [
-      "Gestión de agenda y calendario",
-      "Organización de documentos",
-      "Elaboración y actualización de reportes",
-      "Digitación y manejo de información",
-      "Seguimiento de tareas",
-      "Gestión de correos",
-    ],
-  },
   {
     icon: "support_agent",
     title: "Atención al cliente",
@@ -94,10 +80,10 @@ const plans = [
     description:
       "Una opción práctica para empresas y profesionales que necesitan apoyo operativo puntual.",
     features: [
-      "Asistencia administrativa",
-      "Gestión de agenda",
-      "Organización de información",
-      "Seguimiento de tareas",
+      "Atención al cliente",
+      "Gestión de canales",
+      "Seguimiento de solicitudes",
+      "Protocolos de atención",
       "Supervisión ALIA",
     ],
   },
@@ -107,9 +93,8 @@ const plans = [
     description:
       "Mayor cobertura para operaciones que requieren apoyo constante en diferentes actividades.",
     features: [
-      "Asistencia administrativa",
       "Atención al cliente",
-      "Gestión de correo y agenda",
+      "Ventas y generación de leads",
       "Seguimiento de clientes",
       "Supervisión ALIA",
       "Reportes de seguimiento",
@@ -136,7 +121,7 @@ const faqs = [
   {
     question: "¿Qué tipo de tareas puedo delegar?",
     answer:
-      "Puedes delegar tareas administrativas, atención al cliente, seguimiento de prospectos, gestión de información, agenda, correo y otras actividades operativas previamente definidas con ALIA.",
+      "Puedes delegar la atención de tus canales, el seguimiento de solicitudes, la búsqueda de prospectos, la calificación de leads y otras actividades comerciales previamente definidas con ALIA.",
   },
   {
     question: "¿Los asistentes trabajan desde mi empresa?",
@@ -151,7 +136,7 @@ const faqs = [
   {
     question: "¿Puedo combinar diferentes servicios?",
     answer:
-      "Sí. Podemos combinar administración, atención al cliente y apoyo comercial para crear una solución que responda a las necesidades específicas de tu operación.",
+      "Sí. Podemos combinar atención al cliente y apoyo comercial para crear una solución que responda a las necesidades específicas de tu operación.",
   },
   {
     question: "¿Cómo se supervisa el trabajo?",
@@ -230,16 +215,16 @@ export default function ServiciosPage() {
             </span>
 
             <h2 className="mb-3 text-headline-md font-headline-md tracking-tight text-primary md:text-display-md">
-              Tres áreas para fortalecer tu operación
+              Dos líneas para fortalecer tu operación
             </h2>
 
             <p className="text-body-md leading-relaxed text-on-surface-variant md:text-body-lg">
-              Elige el área que necesitas o combina varias para crear una
+              Elige la línea que necesitas o combina ambas para crear una
               solución integral.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
             {services.map((service) => (
               <article
                 key={service.title}
