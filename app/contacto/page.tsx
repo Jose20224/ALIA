@@ -282,7 +282,7 @@ export default function ContactoPage() {
                           name="email"
                           type="email"
                           required
-                          placeholder="correo@empresa.com"
+                          placeholder="prueba@gmail.com"
                           className="w-full rounded-lg border border-outline-variant/50 bg-surface-container-lowest px-4 py-3 text-body-sm text-primary outline-none transition-all placeholder:text-on-surface-variant/60 focus:border-secondary focus:ring-2 focus:ring-secondary/10"
                         />
                       </div>
