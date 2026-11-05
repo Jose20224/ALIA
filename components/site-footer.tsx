@@ -62,8 +62,8 @@ export function SiteFooter() {
               </Link>
             </div>
             <div className="mt-6 flex flex-col gap-3">
-              <a className="text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" href="mailto:saborglobalofficial@gmail.com">
-                saborglobalofficial@gmail.com
+              <a className="text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" href="mailto:prueba@gmail.com">
+                prueba@gmail.com
               </a>
               <a className="text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" href="https://wa.me/50586854730" target="_blank" rel="noreferrer">
                 WhatsApp: +505 8685 4730

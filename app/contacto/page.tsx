@@ -161,14 +161,14 @@ export default function ContactoPage() {
 
               <div className="space-y-3">
                 <a
-                  href="mailto:saborglobalofficial@gmail.com"
+                  href="mailto:prueba@gmail.com"
                   className="flex items-center gap-3 text-body-sm text-on-surface-variant transition-colors hover:text-secondary"
                 >
                   <span className="material-symbols-outlined text-[20px] text-secondary">
                     mail
                   </span>
 
-                  <span>saborglobalofficial@gmail.com</span>
+                  <span>prueba@gmail.com</span>
                 </a>
 
                 <a
